@@ -4,18 +4,32 @@ body {
     padding: 0;
     background-color: #f8f3e6;
     color: #333;
+    display: flex;
+    flex-direction: column;
+    align-items: center;  /* Centers everything */
 }
 
+/* Center header content */
 header {
-    display: flex; /* Align items horizontally */
-    align-items: center; /* Vertically align content */
+    display: flex;
+    align-items: center; /* Align logo & text vertically */
+    justify-content: center; /* Center everything */
+    width: 100%; /* Ensure full width */
     padding: 20px;
-    background-color: #222; /* Dark theme */
+    background-color: #222;
     color: white;
 }
 
+/* Make sure the content inside header stays centered */
+.header-content {
+    display: flex;
+    align-items: center; /* Align logo & text */
+    text-align: left; /* Keep text aligned properly */
+}
+
+/* Logo styles */
 .logo {
-    width: 100px; /* Adjust size as needed */
+    width: 100px; /* Adjust size */
     height: auto;
     margin-right: 20px; /* Space between logo and text */
 }
