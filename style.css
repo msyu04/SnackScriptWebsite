@@ -7,10 +7,21 @@ body {
 }
 
 header {
-    background-color: #6b4226;
-    color: white;
-    text-align: center;
+    display: flex; /* Align items horizontally */
+    align-items: center; /* Vertically align content */
     padding: 20px;
+    background-color: #222; /* Dark theme */
+    color: white;
+}
+
+.logo {
+    width: 100px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Space between logo and text */
+}
+
+.header-text {
+    flex-grow: 1; /* Allow text to take up remaining space */
 }
 
 section {
