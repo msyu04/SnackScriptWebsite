@@ -1,25 +1,29 @@
+/* Make the body full-screen and center content */
 body {
     display: flex;
     justify-content: center;  /* Center horizontally */
     align-items: center;  /* Center vertically */
     height: 100vh;  /* Full viewport height */
     margin: 0;
-    background-color: #222;  /* Dark theme */
+    background-color: #222;  /* Dark background */
     color: white;
 }
 
+/* Header styles */
 header {
     display: flex;
-    align-items: center;  /* Align logo & text vertically */
-    text-align: center;
-    flex-direction: column; /* Stack items vertically */
+    align-items: center;  /* Align items vertically */
+    text-align: left; /* Align text properly */
 }
 
+/* Logo styles */
 .logo {
-    width: 150px; /* Adjust size as needed */
+    width: 120px; /* Adjust as needed */
     height: auto;
-    margin-bottom: 20px; /* Space between logo and text */
-}body {
+    margin-right: 20px; /* Space between logo and text */
+}
+
+body {
     display: flex;
     justify-content: center;  /* Center horizontally */
     align-items: center;  /* Center vertically */
