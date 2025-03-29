@@ -28,37 +28,96 @@
         <h2>Example Programs</h2>
         <pre><code>
 # Hello World in SnackScript
-whisk "Hello, world!"
+🥘 say_hello:
+  🍦 This is a single line comment
+  🍨 This is a
+     multi-line comment
+     :) 🍨
+  🍽️ "Hello, world"
+;
         </code></pre>
 
         <pre><code>
-# Simple loop
-recipe stir(3):
-    whisk "Mixing..."
+# Lists
+🥡 student_scores = [ ("Annie", 91), ("Barbara", 58), ("Charlie", 49), ("Daniel", 51) ]
+🥘 determine_grade(score):
+  🧁 score >= 90:
+    🫗 "A"
+  ;
+  🍰 score >= 80:
+    🫗 "B"
+  ;
+  🍰 score >= 70:
+    🫗 "C"
+  ;
+  🍰 score >= 60:
+    🫗 "D"
+  ;
+  🎂:
+    🫗 "F"
+  ;
+;
+🍱 student_grades = {name: determine_grade(score) for name, score in student_scores}
+🍥 student, grade in student_grades.🥚:
+  🍽️ student + ":" + grade
+;
         </code></pre>
 
         <pre><code>
-# Function (spell)
-spell bake(cookies):
-    if cookies > 0:
-        whisk "Baking " + cookies + " cookies!"
-    else:
-        whisk "No cookies to bake!"
+# Multiplication
+🍥 (🍳 i = 1, i <= 10, i++):
+  🍳 row = ""
+  🍥 (🍳 j = 1, j <= 10, j++):
+    row += (i * j) + "\t"
+  ;
+  🍽️ row
+;
         </code></pre>
 
         <pre><code>
-# Conditional magic
-ingredient sugar = 5
-if sugar > 3:
-    whisk "Too sweet!"
-else:
-    whisk "Just right!"
+# Fibonacci
+🥘 fib (🍳 n) :
+  🍳 a = 0, b = 1, f = 1
+  🍥 (🍳 i = 2, i < n, i++):
+    f = a + b
+    a = b
+    b = f
+  🫗 f
+  ;
+;
         </code></pre>
 
         <pre><code>
-# List of ingredients
-ingredients pantry = ["flour", "sugar", "eggs"]
-whisk pantry[0]  # Outputs: flour
+# Class
+🫙 Car:
+  🥘 _init_ (self, make, model, year):
+    self.make = make
+    self.model = model
+    self.year = year
+    self.engine_started = 🍲
+  ;
+
+  🥘 start_engine(self):
+    🧁 not self.engine_started:
+      self.engine_Started = 🥗
+      🍽️ "Started the engine for the", self.year, self.make, self.model
+    ;
+    🎂:
+      🍽️ "The engine is already running"
+    ;
+  ;
+
+  🥘 stop_engine(self):
+    🧁 self.engine_started:
+      self.engine_started = 🍲
+      🍽️ "Stopped the engine for the", self.year, self.make, self.model
+    ;
+    🎂:
+      🍽️ "The engine is already stopped"
+    ;
+  ;
+;
+
         </code></pre>
     </section>
 
