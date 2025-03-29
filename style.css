@@ -39,10 +39,12 @@ header {
 }
 
 section {
+    text-align: center; /* Center text */
+    max-width: 800px; /* Keep it readable */
+    margin: auto; /* Center horizontally */
     padding: 20px;
-    max-width: 800px;
-    margin: auto;
 }
+
 
 h2 {
     color: #8b5e3c;
