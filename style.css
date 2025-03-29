@@ -1,23 +1,45 @@
 body {
-    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    height: 100vh;  /* Full viewport height */
     margin: 0;
-    padding: 0;
-    background-color: #f8f3e6;
-    color: #333;
-}
-
-header {
-    display: flex; /* Align items horizontally */
-    align-items: center; /* Vertically align content */
-    padding: 20px;
-    background-color: #222; /* Dark theme */
+    background-color: #222;  /* Dark theme */
     color: white;
 }
 
+header {
+    display: flex;
+    align-items: center;  /* Align logo & text vertically */
+    text-align: center;
+    flex-direction: column; /* Stack items vertically */
+}
+
 .logo {
-    width: 100px; /* Adjust size as needed */
+    width: 150px; /* Adjust size as needed */
     height: auto;
-    margin-right: 20px; /* Space between logo and text */
+    margin-bottom: 20px; /* Space between logo and text */
+}body {
+    display: flex;
+    justify-content: center;  /* Center horizontally */
+    align-items: center;  /* Center vertically */
+    height: 100vh;  /* Full viewport height */
+    margin: 0;
+    background-color: #222;  /* Dark theme */
+    color: white;
+}
+
+header {
+    display: flex;
+    align-items: center;  /* Align logo & text vertically */
+    text-align: center;
+    flex-direction: column; /* Stack items vertically */
+}
+
+.logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-bottom: 20px; /* Space between logo and text */
 }
 
 .header-text {
