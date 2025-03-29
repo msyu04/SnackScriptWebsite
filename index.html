@@ -18,8 +18,6 @@
             </div>
         </div>
     </header>
-    
-    
 
     <section id="about">
         <h2>About SnackScript</h2>
@@ -33,6 +31,7 @@
 
     <section id="examples">
         <h2>Example Programs</h2>
+
         <pre><code>
 # Hello World in SnackScript
 🥘 say_hello:
@@ -71,7 +70,7 @@
         </code></pre>
 
         <pre><code>
-# Multiplication
+# Multiplication Table
 🍥 (🍳 i = 1, i <= 10, i++):
   🍳 row = ""
   🍥 (🍳 j = 1, j <= 10, j++):
@@ -92,39 +91,6 @@
   🫗 f
   ;
 ;
-        </code></pre>
-
-        <pre><code>
-# Class
-🫙 Car:
-  🥘 _init_ (self, make, model, year):
-    self.make = make
-    self.model = model
-    self.year = year
-    self.engine_started = 🍲
-  ;
-
-  🥘 start_engine(self):
-    🧁 not self.engine_started:
-      self.engine_Started = 🥗
-      🍽️ "Started the engine for the", self.year, self.make, self.model
-    ;
-    🎂:
-      🍽️ "The engine is already running"
-    ;
-  ;
-
-  🥘 stop_engine(self):
-    🧁 self.engine_started:
-      self.engine_started = 🍲
-      🍽️ "Stopped the engine for the", self.year, self.make, self.model
-    ;
-    🎂:
-      🍽️ "The engine is already stopped"
-    ;
-  ;
-;
-
         </code></pre>
     </section>
 

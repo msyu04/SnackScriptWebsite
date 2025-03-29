@@ -1,66 +1,59 @@
+/* General styling */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f3e6;
     color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  /* Centers everything */
+    text-align: center; /* Ensures everything is centered */
 }
 
-/* Center header content */
+/* Header styling */
 header {
     display: flex;
-    align-items: center; /* Align logo & text vertically */
-    justify-content: center; /* Center everything */
-    width: 100%; /* Ensure full width */
+    justify-content: center; /* Centers everything */
+    align-items: center; /* Vertically aligns */
     padding: 20px;
     background-color: #222;
     color: white;
 }
 
-/* Make sure the content inside header stays centered */
 .header-content {
     display: flex;
-    align-items: center; /* Align logo & text */
-    text-align: left; /* Keep text aligned properly */
+    align-items: center;
 }
 
-/* Logo styles */
 .logo {
-    width: 100px; /* Adjust size */
+    width: 100px;
     height: auto;
-    margin-right: 20px; /* Space between logo and text */
+    margin-right: 20px;
 }
 
-.header-text {
-    flex-grow: 1; /* Allow text to take up remaining space */
-}
-
+/* Section Styling */
 section {
-    text-align: center; /* Center text */
-    max-width: 800px; /* Keep it readable */
-    margin: auto; /* Center horizontally */
+    max-width: 800px;
+    margin: auto;
     padding: 20px;
+    text-align: center; /* Centers titles and descriptions */
 }
 
-
-h2 {
-    color: #8b5e3c;
-}
-
+/* Code styling */
 pre {
     background: #eee;
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
+    text-align: left; /* Ensures code remains left-aligned */
+    display: inline-block; /* Prevents stretching */
 }
 
+/* Developer section */
 .developer {
     display: flex;
     align-items: center;
     gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
 }
 
 .developer img {
@@ -70,6 +63,7 @@ pre {
     object-fit: cover;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
