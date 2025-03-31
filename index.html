@@ -69,18 +69,6 @@
 ;
         </code></pre>
 
-        <pre><code>
-# Fibonacci
-🥘 fib (🍳 n) :
-  🍳 a = 0, b = 1, f = 1
-  🍥 (🍳 i = 2, i < n, i++):
-    f = a + b
-    a = b
-    b = f
-  🫗 f
-  ;
-;
-        </code></pre>
 
         <pre><code>
           # Lists
@@ -107,6 +95,38 @@
             🍽️ student + ":" + grade
           ;
                   </code></pre>
+
+<code><pre>
+  # Classes
+  🫙 Car:
+  🥘 _init_ (self, make, model, year):
+    self.make = make
+    self.model = model
+    self.year = year
+    self.engine_started = 🍲
+  ;
+
+  🥘 start_engine(self):
+    🧁 not self.engine_started:
+      self.engine_Started = 🥗
+      🍽️ "Started the engine for the", self.year, self.make, self.model
+    ;
+    🎂:
+      🍽️ "The engine is already running"
+    ;
+  ;
+
+  🥘 stop_engine(self):
+    🧁 self.engine_started:
+      self.engine_started = 🍲
+      🍽️ "Stopped the engine for the", self.year, self.make, self.model
+    ;
+    🎂:
+      🍽️ "The engine is already stopped"
+    ;
+  ;
+;
+</code></pre>
     </section>
 
     <section id="developers">
