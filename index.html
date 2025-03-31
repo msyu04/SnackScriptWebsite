@@ -20,13 +20,17 @@
     </header>
 
     <section id="about">
-        <h2>About SnackScript</h2>
-        <p>SnackScript is a spellbinding programming language that blends wizardry with food magic. 
-        Designed for readability and fun, it allows developers to cast spells with ingredients 
-        rather than traditional syntax.</p>
-        <p>With SnackScript, loops become "recipes," functions are "spells," 
-        and variables are "ingredients." If you've ever wanted to cook up some code, 
-        this is the language for you!</p>
+        <h2>About the Language</h2>
+        <p>Long ago, a mother and her child were traveling multiple days across the cold, 
+          icy plains in search of finding safety from a terrible war. Suddenly, the mother 
+          had collapsed - putting both in a terrible situation. Far from any sort of civilization, 
+          there seemed to be no hope. Fate did not abandon them though; a wizard had found them 
+          and started casting his scripts. After teleporting them all to a warm house, the wizard 
+          used magic to create a warm meal for both. Before leaving them behind, he left the
+          child with the magic stones that were used to help them out. Years later, the child
+          had grown up and harnessed the magic within to make sure that no one was left hungry.
+          With SnackScript, wizards and chefs alike can now write code in the form of recipes
+          and use magic to compile them to make whatever they wish for.</p>
     </section>
 
     <section id="examples">
@@ -55,32 +59,6 @@
         </code></pre>
 
         <pre><code>
-# Lists
-🥡 student_scores = [ ("Annie", 91), ("Barbara", 58), ("Charlie", 49), ("Daniel", 51) ]
-🥘 determine_grade(score):
-  🧁 score >= 90:
-    🫗 "A"
-  ;
-  🍰 score >= 80:
-    🫗 "B"
-  ;
-  🍰 score >= 70:
-    🫗 "C"
-  ;
-  🍰 score >= 60:
-    🫗 "D"
-  ;
-  🎂:
-    🫗 "F"
-  ;
-;
-🍱 student_grades = {name: determine_grade(score) for name, score in student_scores}
-🍥 student, grade in student_grades.🥚:
-  🍽️ student + ":" + grade
-;
-        </code></pre>
-
-        <pre><code>
 # Multiplication Table
 🍥 (🍳 i = 1, i <= 10, i++):
   🍳 row = ""
@@ -103,6 +81,32 @@
   ;
 ;
         </code></pre>
+
+        <pre><code>
+          # Lists
+          🥡 student_scores = [ ("Annie", 91), ("Barbara", 58), ("Charlie", 49), ("Daniel", 51) ]
+          🥘 determine_grade(score):
+            🧁 score >= 90:
+              🫗 "A"
+            ;
+            🍰 score >= 80:
+              🫗 "B"
+            ;
+            🍰 score >= 70:
+              🫗 "C"
+            ;
+            🍰 score >= 60:
+              🫗 "D"
+            ;
+            🎂:
+              🫗 "F"
+            ;
+          ;
+          🍱 student_grades = {name: determine_grade(score) for name, score in student_scores}
+          🍥 student, grade in student_grades.🥚:
+            🍽️ student + ":" + grade
+          ;
+                  </code></pre>
     </section>
 
     <section id="developers">
