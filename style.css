@@ -86,6 +86,7 @@ a:hover {
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
+    margin: 40px 0;
 }
 
 .feature-overview, .grammar-box {
@@ -109,13 +110,6 @@ a:hover {
 .feature-overview li {
     padding: 4px 0;
     font-size: 16px;
-}
-
-.split-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
 }
 
 .feature-overview, .grammar-box {
@@ -146,14 +140,6 @@ a:hover {
     margin-bottom: 20px;
 }
 
-.split-container {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 40px;
-    margin: 40px 0;
-}
-
 .info-box {
     flex: 1;
     min-width: 250px;
@@ -161,8 +147,14 @@ a:hover {
     background-color: #fffaf0;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    border: 2px solid #d2b48c;  /* adds clear box outline */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
     text-align: left;
+    transition: transform 0.2s ease;
+}
+
+.info-box:hover {
+    transform: scale(1.02);
 }
 
 .info-box h2 {
@@ -173,6 +165,7 @@ a:hover {
 .info-box ul {
     list-style: none;
     padding: 0;
+    margin: 0;
 }
 
 .info-box li {
