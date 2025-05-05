@@ -174,11 +174,16 @@ a:hover {
 }
 
 .easter-egg-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     text-align: center;
     margin: 50px auto;
     max-width: 600px;
     padding: 20px;
 }
+
 
 #easterEggBtn {
     display: inline-block;
