@@ -80,3 +80,33 @@ a {
 a:hover {
     text-decoration: underline;
 }
+
+.split-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.feature-overview, .grammar-box {
+    flex: 1;
+    min-width: 300px;
+    max-width: 400px;
+    background-color: #fffaf0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.grammar-box ul,
+.feature-overview ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: left;
+}
+
+.grammar-box li,
+.feature-overview li {
+    padding: 4px 0;
+    font-size: 16px;
+}
