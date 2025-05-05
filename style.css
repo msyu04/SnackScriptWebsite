@@ -172,3 +172,34 @@ a:hover {
     padding: 6px 0;
     font-size: 16px;
 }
+
+.easter-egg-section {
+    text-align: center;
+    margin: 50px 0;
+}
+
+#easterEggBtn {
+    padding: 10px 20px;
+    background-color: #f4a460;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#easterEggBtn:hover {
+    background-color: #d2691e;
+}
+
+#easterEggText {
+    margin-top: 20px;
+    font-style: italic;
+    color: #555;
+    transition: opacity 0.3s ease;
+}
+
+.hidden {
+    display: none;
+}
