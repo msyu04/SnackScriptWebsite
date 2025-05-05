@@ -145,3 +145,37 @@ a:hover {
 .grammar-section {
     margin-bottom: 20px;
 }
+
+.split-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 40px 0;
+}
+
+.info-box {
+    flex: 1;
+    min-width: 250px;
+    max-width: 300px;
+    background-color: #fffaf0;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    text-align: left;
+}
+
+.info-box h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.info-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.info-box li {
+    padding: 6px 0;
+    font-size: 16px;
+}
