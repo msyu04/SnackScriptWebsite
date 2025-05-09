@@ -95,7 +95,7 @@
         <h2>Example Programs</h2>
 
         <pre><code>
-# Hello World in SnackScript
+# Defining and Calling a Function
 🥘 say_hello:
   🍦 This is a single line comment
   🍨 This is a
@@ -103,86 +103,82 @@
      :) 🍨
   🍽️ "Hello, world"
 ;
+
+say_hello()
         </code></pre>
 
         <pre><code>
-# Nested Loops
-🍥 (🍳 i = 1, i <= 10, i++):
-🍳 row = ""
-🍥 (🍳 j = 1, j <= 10, j++):
-  row += (i * j) + "\t"
-;
-🍽️ row
-;
-        </code></pre>
-
-        <pre><code>
-# Multiplication Table
-🍥 (🍳 i = 1, i <= 10, i++):
-  🍳 row = ""
-  🍥 (🍳 j = 1, j <= 10, j++):
-    row += (i * j) + "\t"
+# Nested Loops (Multiplication Table)
+🍥 i in 0 ... 10:
+  🍝 row = ""
+  🍥 j in 0 ... 10:
+    🍝 num = (i * j)
+    row += num + "\t"
+    j++
   ;
   🍽️ row
+  i++
+;
+        </code></pre>
+
+        <pre><code>
+# Recursion (Fibonacci)
+🥘 fib (🍳 n) :
+  🍳 a = 0
+  🍳 b = 1
+  🍳 f = 1
+  🍥 i in 2...n:
+    f = a + b
+    a = b
+    b = f
+  🫗 f
+  ;
 ;
         </code></pre>
 
 
         <pre><code>
-          # Lists
+          # Lists and Dictionaries
           🥡 student_scores = [ ("Annie", 91), ("Barbara", 58), ("Charlie", 49), ("Daniel", 51) ]
-          🥘 determine_grade(score):
-            🧁 score >= 90:
-              🫗 "A"
-            ;
-            🍰 score >= 80:
-              🫗 "B"
-            ;
-            🍰 score >= 70:
-              🫗 "C"
-            ;
-            🍰 score >= 60:
-              🫗 "D"
-            ;
-            🎂:
-              🫗 "F"
-            ;
-          ;
-          🍱 student_grades = {name: determine_grade(score) for name, score in student_scores}
-          🍥 student, grade in student_grades.🥚:
-            🍽️ student + ":" + grade
-          ;
+🥘 determine_grade(🍳 score):
+  🧁 score >= 90:
+    🫗 "A"
+  ;
+  🍰 score >= 80:
+    🫗 "B"
+  ;
+  🍰 score >= 70:
+    🫗 "C"
+  ;
+  🍰 score >= 60:
+    🫗 "D"
+  ;
+  🎂:
+    🫗 "F"
+  ;
+;
+🍱 student_grades = {name: determine_grade(score) for name, score in student_scores}
+🍥 student, grade in student_grades.items:
+  🍽️ student, ":", grade
+;
                   </code></pre>
 
 <code><pre>
-  # Classes
-  🫙 Car:
-  🥘 _init_ (self, make, model, year):
-    self.make = make
-    self.model = model
-    self.year = year
-    self.engine_started = 🍲
-  ;
+  # Intro
+  🍦 The intro sample script for the language
 
-  🥘 start_engine(self):
-    🧁 not self.engine_started:
-      self.engine_Started = 🥗
-      🍽️ "Started the engine for the", self.year, self.make, self.model
-    ;
-    🎂:
-      🍽️ "The engine is already running"
-    ;
-  ;
+🥡 messages = [ "⍑ᒷꖎl𝙹", "ᓭ⍑ᔑ∷!¡リᒷᓭᓭ ⍊", "||𝙹⚍ ᓭ⍑𝙹⚍ꖎ↸ ∴ᔑℸ ̣ ᓵ⍑ ᔑ∷ᓵᔑリᒷ",  "ᓭℸ ̣ ∷╎ꖌᒷ ᒲᒷ ↸𝙹∴リ ∴╎ℸ ̣ ⍑ ᔑꖎꖎ 𝙹⎓ ||𝙹⚍∷ ⍑ᔑℸ ̣ ∷ᒷ↸",  "ᒲᔑ∴∴╎ᔑ⊣ᒷ ╎ᓭ ∴⍑ᔑℸ ̣  ʖ∴╎リ⊣ᓭ ⚍ᓭ ℸ ̣ 𝙹⊣ᒷ⍊ᔑ⍑ ℸ ̣ 𝙹↸ᔑ||", "ᔑリ↸ ||𝙹⚍∷ ⋮𝙹⚍∷リᒷ|| ℸ ̣ 𝙹 ℸ ̣ ⍑ᒷ ↸ᔑ∷ꖌ ᓭ╎↸ᒷ ∴╎ꖎꖎ ʖᒷ ᓵ𝙹ᒲ!¡ꖎᒷℸ ̣ ᒷ"]
+🍳 name = "SnackScript"
 
-  🥘 stop_engine(self):
-    🧁 self.engine_started:
-      self.engine_started = 🍲
-      🍽️ "Stopped the engine for the", self.year, self.make, self.model
-    ;
-    🎂:
-      🍽️ "The engine is already stopped"
-    ;
+🥘 printMessage:
+  🍥 message in messages:
+    🍽️ message, "\r"
   ;
+;
+
+🍽️ printMessage()
+🍽️ "Welcome to ", name,"!"
+🍽️ printMessage()
 ;
 </code></pre>
     </section>
