@@ -1,4 +1,4 @@
-/* === Global === */
+/* General styling */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
@@ -6,152 +6,136 @@ body {
     background-color: #f8f3e6;
     color: #333;
     text-align: center;
-}
-
-a {
-    color: #ff9800;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
-.hidden {
-    display: none;
-}
-
-/* === Header === */
-header {
+  }
+  
+  /* Header styling */
+  header {
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
     background-color: #222;
     color: white;
-}
-
-.header-content {
+  }
+  
+  .header-content {
     display: flex;
     align-items: center;
-}
-
-.logo {
+  }
+  
+  .logo {
     width: 100px;
     height: auto;
     margin-right: 20px;
-}
-
-/* === Sections === */
-section {
+  }
+  
+  /* Section Styling */
+  section {
     max-width: 800px;
     margin: auto;
     padding: 20px;
     text-align: center;
-}
-
-.grammar-section {
-    margin-bottom: 20px;
-}
-
-/* === Code Blocks === */
-pre {
+  }
+  
+  /* Code styling */
+  pre {
     background: #eee;
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
     text-align: left;
     display: inline-block;
-}
-
-/* === Developer Section === */
-.developer {
+  }
+  
+  /* Developer section */
+  .developer {
     display: flex;
     align-items: center;
-    justify-content: center;
     gap: 10px;
+    justify-content: center;
     margin-bottom: 20px;
-}
-
-.developer img {
+  }
+  
+  .developer img {
     width: 80px;
     height: 80px;
     border-radius: 50%;
     object-fit: cover;
-}
-
-/* === Footer === */
-footer {
+  }
+  
+  /* Footer */
+  footer {
     text-align: center;
     padding: 10px;
     background: #6b4226;
     color: white;
     margin-top: 20px;
-}
-
-/* === Layout Containers === */
-.split-container {
+  }
+  
+  a {
+    color: #ff9800;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  .split-container {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
     gap: 40px;
     margin: 40px 0;
-}
-
-/* === Shared Box Style === */
-.card-box {
+  }
+  
+  /* Info box shared style */
+  .feature-overview,
+  .grammar-box,
+  .info-box {
     flex: 1;
     min-width: 300px;
     max-width: 400px;
     background-color: #fffaf0;
     padding: 20px;
     border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Left-align bullet text */
+  .info-box ul {
+    list-style: disc;
+    list-style-position: inside;
+    padding-left: 0;
+    margin-left: 0;
     text-align: left;
-}
-
-.card-box ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
-.card-box li {
-    padding: 4px 0;
+  }
+  
+  .info-box li {
     font-size: 16px;
-}
-
-/* === Info Box (variation) === */
-.info-box {
-    min-width: 250px;
-    max-width: 300px;
-    border: 2px solid #d2b48c;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    transition: transform 0.2s ease;
-}
-
-.info-box:hover {
-    transform: scale(1.02);
-}
-
-.info-box h2 {
+    padding: 4px 0;
+  }
+  
+  /* Grammar section spacing */
+  .grammar-section {
+    margin-bottom: 20px;
+  }
+  
+  .info-box h2 {
     text-align: center;
     margin-bottom: 15px;
-}
-
-.info-box li {
-    padding: 6px 0;
-}
-
-/* === Easter Egg Section === */
-.easter-egg-section {
+  }
+  
+  /* Easter Egg */
+  .easter-egg-section {
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     padding: 20px;
-}
-
-#easterEggBtn {
+  }
+  
+  #easterEggBtn {
     display: inline-block;
     margin-top: 10px;
     padding: 10px 20px;
@@ -162,15 +146,21 @@ footer {
     font-size: 1rem;
     cursor: pointer;
     transition: background-color 0.3s ease;
-}
-
-#easterEggBtn:hover {
+  }
+  
+  #easterEggBtn:hover {
     background-color: #d2691e;
-}
-
-#easterEggText.hidden {
+  }
+  
+  #easterEggText.hidden {
+    display: none;
     margin-top: 20px;
     font-style: italic;
     color: #555;
     transition: opacity 0.3s ease;
-}
+  }
+  
+  .hidden {
+    display: none;
+  }
+  
