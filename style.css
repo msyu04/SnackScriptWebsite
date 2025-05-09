@@ -1,18 +1,31 @@
-/* General styling */
+/* === Global === */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f8f3e6;
     color: #333;
-    text-align: center; /* Ensures everything is centered */
+    text-align: center;
 }
 
-/* Header styling */
+a {
+    color: #ff9800;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.hidden {
+    display: none;
+}
+
+/* === Header === */
 header {
     display: flex;
-    justify-content: center; /* Centers everything */
-    align-items: center; /* Vertically aligns */
+    justify-content: center;
+    align-items: center;
     padding: 20px;
     background-color: #222;
     color: white;
@@ -29,30 +42,34 @@ header {
     margin-right: 20px;
 }
 
-/* Section Styling */
+/* === Sections === */
 section {
     max-width: 800px;
     margin: auto;
     padding: 20px;
-    text-align: center; /* Centers titles and descriptions */
+    text-align: center;
 }
 
-/* Code styling */
+.grammar-section {
+    margin-bottom: 20px;
+}
+
+/* === Code Blocks === */
 pre {
     background: #eee;
     padding: 10px;
     border-radius: 5px;
     overflow-x: auto;
-    text-align: left; /* Ensures code remains left-aligned */
-    display: inline-block; /* Prevents stretching */
+    text-align: left;
+    display: inline-block;
 }
 
-/* Developer section */
+/* === Developer Section === */
 .developer {
     display: flex;
     align-items: center;
-    gap: 10px;
     justify-content: center;
+    gap: 10px;
     margin-bottom: 20px;
 }
 
@@ -63,7 +80,7 @@ pre {
     object-fit: cover;
 }
 
-/* Footer */
+/* === Footer === */
 footer {
     text-align: center;
     padding: 10px;
@@ -72,15 +89,7 @@ footer {
     margin-top: 20px;
 }
 
-a {
-    color: #ff9800;
-    text-decoration: none;
-}
-
-a:hover {
-    text-decoration: underline;
-}
-
+/* === Layout Containers === */
 .split-container {
     display: flex;
     justify-content: center;
@@ -89,7 +98,8 @@ a:hover {
     margin: 40px 0;
 }
 
-.feature-overview, .grammar-box {
+/* === Shared Box Style === */
+.card-box {
     flex: 1;
     min-width: 300px;
     max-width: 400px;
@@ -97,59 +107,26 @@ a:hover {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.grammar-box ul,
-.feature-overview ul {
-    list-style: none;
-    padding-left: 0;
     text-align: left;
 }
 
-.grammar-box li,
-.feature-overview li {
-    padding: 4px 0;
-    font-size: 16px;
-}
-
-.feature-overview, .grammar-box {
-    flex: 1;
-    min-width: 300px;
-    max-width: 400px;
-    background-color: #fffaf0;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-}
-
-.feature-overview ul,
-.grammar-box ul {
+.card-box ul {
     list-style: none;
-    padding-left: 0;
-    text-align: left;
+    padding: 0;
     margin: 0;
 }
 
-.feature-overview li,
-.grammar-box li {
+.card-box li {
     padding: 4px 0;
     font-size: 16px;
 }
 
-.grammar-section {
-    margin-bottom: 20px;
-}
-
+/* === Info Box (variation) === */
 .info-box {
-    flex: 1;
     min-width: 250px;
     max-width: 300px;
-    background-color: #fffaf0;
-    padding: 20px;
-    border-radius: 10px;
-    border: 2px solid #d2b48c;  /* adds clear box outline */
+    border: 2px solid #d2b48c;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
-    text-align: left;
     transition: transform 0.2s ease;
 }
 
@@ -162,25 +139,17 @@ a:hover {
     margin-bottom: 15px;
 }
 
-.info-box ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-}
-
 .info-box li {
     padding: 6px 0;
-    font-size: 16px;
 }
 
+/* === Easter Egg Section === */
 .easter-egg-section {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     padding: 20px;
 }
-
 
 #easterEggBtn {
     display: inline-block;
@@ -199,14 +168,9 @@ a:hover {
     background-color: #d2691e;
 }
 
-#easterEggText {
+#easterEggText.hidden {
     margin-top: 20px;
     font-style: italic;
     color: #555;
     transition: opacity 0.3s ease;
-    display: block;
-}
-
-.hidden {
-    display: none;
 }
