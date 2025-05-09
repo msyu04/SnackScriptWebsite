@@ -1,8 +1,12 @@
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", function () {
     console.log("SnackScript website loaded!");
-});
 
-document.getElementById("easterEggBtn").addEventListener("click", function() {
+    const button = document.getElementById("easterEggBtn");
     const text = document.getElementById("easterEggText");
-    text.classList.toggle("hidden");
+
+    if (button && text) {
+        button.addEventListener("click", function () {
+            text.classList.toggle("hidden");
+        });
+    }
 });
