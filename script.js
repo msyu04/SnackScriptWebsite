@@ -1,17 +1,14 @@
-document.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function() {
     console.log("SnackScript website loaded!");
 
-    // Step 2: Check if the button exists
     const btn = document.getElementById("easterEggBtn");
-    console.log("Button:", btn); // <- This will show in the browser console
-
     const text = document.getElementById("easterEggText");
 
-    if (btn && text) {
-        btn.addEventListener("click", function() {
-            text.classList.toggle("hidden");
-        });
-    } else {
-        console.warn("Button or text not found!");
-    }
+    // Log the button to ensure it's being selected
+    console.log("Button: ", btn);
+
+    btn.addEventListener("click", function() {
+        console.log("Button clicked!");  // Log when button is clicked
+        text.classList.toggle("hidden");
+    });
 });
