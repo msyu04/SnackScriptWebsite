@@ -1,41 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>SnackScript - A Magical Language</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script defer src="script.js"></script>
-</head>
-<body>
-
+  </head>
+  <body>
     <header>
-        <div class="header-content">
-            <img src="logo.png" alt="SnackScript Logo" class="logo">
-            <div class="header-text">
-                <h1>SnackScript</h1>
-                <p>Enchanting the Future</p>
-            </div>
+      <div class="header-content">
+        <img src="logo.png" alt="SnackScript Logo" class="logo" />
+        <div class="header-text">
+          <h1>SnackScript</h1>
+          <p>Enchanting the Future</p>
         </div>
+      </div>
     </header>
 
     <section id="about">
-        <h2>About the Language</h2>
-        <p>Long ago, a mother and her child were traveling multiple days across the cold, 
-          icy plains in search of finding safety from a terrible war. Suddenly, the mother 
-          had collapsed - putting both in a terrible situation. Far from any sort of civilization, 
-          there seemed to be no hope. Fate did not abandon them though; a wizard had found them 
-          and started casting his scripts. After teleporting them all to a warm house, the wizard 
-          used magic to create a warm meal for both. Before leaving them behind, he left the
-          child with the magic stones that were used to help them out. Years later, the child
-          had grown up and harnessed the magic within to make sure that no one was left hungry.
-          With SnackScript, wizards and chefs alike can now write code in the form of recipes
-          and use magic to compile them to make whatever they wish for.</p>
+      <h2>About the Language</h2>
+      <p>
+        Long ago, a mother and her child were traveling multiple days across the cold,
+        icy plains in search of finding safety from a terrible war. Suddenly, the mother
+        had collapsed - putting both in a terrible situation. Far from any sort of
+        civilization, there seemed to be no hope. Fate did not abandon them though; a
+        wizard had found them and started casting his scripts. After teleporting them all
+        to a warm house, the wizard used magic to create a warm meal for both. Before
+        leaving them behind, he left the child with the magic stones that were used to
+        help them out. Years later, the child had grown up and harnessed the magic within
+        to make sure that no one was left hungry. With SnackScript, wizards and chefs
+        alike can now write code in the form of recipes and use magic to compile them to
+        make whatever they wish for.
+      </p>
     </section>
 
     <section id="features-and-grammar">
       <div class="split-container">
-    
         <div class="info-box">
           <h2>Feature Overview</h2>
           <ul>
@@ -57,7 +58,7 @@
             <li>🍚 = any</li>
           </ul>
         </div>
-    
+
         <div class="info-box">
           <h2>🍴 Syntax</h2>
           <ul>
@@ -76,10 +77,9 @@
             <li>🍱 = comprehension</li>
           </ul>
         </div>
-    
       </div>
     </section>
-    
+
     <section>
       <div class="easter-egg-section">
         <h2>Easter Egg</h2>
@@ -89,12 +89,11 @@
         </p>
       </div>
     </section>
-    
-    
-    <section id="examples">
-        <h2>Example Programs</h2>
 
-        <pre><code>
+    <section id="examples">
+      <h2>Example Programs</h2>
+
+      <pre><code>
 # Defining and Calling a Function
 🥘 say_hello:
   🍦 This is a single line comment
@@ -105,9 +104,9 @@
 ;
 
 say_hello()
-        </code></pre>
+      </code></pre>
 
-        <pre><code>
+      <pre><code>
 # Nested Loops (Multiplication Table)
 🍥 i in 0 ... 10:
   🍝 row = ""
@@ -119,9 +118,9 @@ say_hello()
   🍽️ row
   i++
 ;
-        </code></pre>
+      </code></pre>
 
-        <pre><code>
+      <pre><code>
 # Recursion (Fibonacci)
 🥘 fib (🍳 n) :
   🍳 a = 0
@@ -134,12 +133,12 @@ say_hello()
   🫗 f
   ;
 ;
-        </code></pre>
+      </code></pre>
 
+      <pre><code>
+# Lists and Dictionaries
+🥡 student_scores = [ ("Annie", 91), ("Barbara", 58), ("Charlie", 49), ("Daniel", 51) ]
 
-        <pre><code>
-          # Lists and Dictionaries
-          🥡 student_scores = [ ("Annie", 91), ("Barbara", 58), ("Charlie", 49), ("Daniel", 51) ]
 🥘 determine_grade(🍳 score):
   🧁 score >= 90:
     🫗 "A"
@@ -157,17 +156,18 @@ say_hello()
     🫗 "F"
   ;
 ;
+
 🍱 student_grades = {name: determine_grade(score) for name, score in student_scores}
 🍥 student, grade in student_grades.items:
   🍽️ student, ":", grade
 ;
-                  </code></pre>
+      </code></pre>
 
-<code><pre>
-  # Intro
-  🍦 The intro sample script for the language
+      <pre><code>
+# Intro
+🍦 The intro sample script for the language
 
-🥡 messages = [ "⍑ᒷꖎl𝙹", "ᓭ⍑ᔑ∷!¡リᒷᓭᓭ ⍊", "||𝙹⚍ ᓭ⍑𝙹⚍ꖎ↸ ∴ᔑℸ ̣ ᓵ⍑ ᔑ∷ᓵᔑリᒷ""]
+🥡 messages = [ "⍑ᒷꖎl𝙹", "ᓭ⍑ᔑ∷!¡リᒷᓭᓭ ⍊", "||𝙹⚍ ᓭ⍑𝙹⚍ꖎ↸ ∴ᔑℸ ̣ ᓵ⍑ ᔑ∷ᓵᔑリᒷ"]
 🍳 name = "SnackScript"
 
 🥘 printMessage:
@@ -177,31 +177,33 @@ say_hello()
 ;
 
 🍽️ printMessage()
-🍽️ "Welcome to ", name,"!"
+🍽️ "Welcome to ", name, "!"
 🍽️ printMessage()
 ;
-</code></pre>
+      </code></pre>
     </section>
 
     <section id="developers">
-        <h2>Meet the Developers ~ Juniors @ LMU</h2>
-        <div class="developer">
-            <h3>Jody Jasim</h3>
-            <p>Into Yugioh and has his own Blue Eyes</p>
-        </div>
-        <div class="developer">
-            <h3>Taylor Musso</h3>
-            <p>Reads manwha in their free time</p>
-        </div>
-        <div class="developer">
-            <h3>Matthew De Jesus</h3>
-            <p>Back into collecting Pokemon cards</p>
-        </div>
+      <h2>Meet the Developers ~ Juniors @ LMU</h2>
+      <div class="developer">
+        <h3>Jody Jasim</h3>
+        <p>Into Yugioh and has his own Blue Eyes</p>
+      </div>
+      <div class="developer">
+        <h3>Taylor Musso</h3>
+        <p>Reads manwha in their free time</p>
+      </div>
+      <div class="developer">
+        <h3>Matthew De Jesus</h3>
+        <p>Back into collecting Pokemon cards</p>
+      </div>
     </section>
 
     <footer>
-        <p>Check out the <a href="https://github.com/Jjasim1/SnackScript">GitHub Repository</a></p>
+      <p>
+        Check out the
+        <a href="https://github.com/Jjasim1/SnackScript">GitHub Repository</a>
+      </p>
     </footer>
-
-</body>
+  </body>
 </html>
